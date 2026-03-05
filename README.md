@@ -6,9 +6,9 @@ A REST API that generates and validates C# .NET solution scaffolds conforming to
 
 AI coding agents are incredibly capable. They can generate features, refactor code, and scaffold entire solutions in seconds. But when it comes to architecture, they still tend to guess. They invent folder structures. They improvise namespaces. They quietly bend dependency rules. Not because they are careless - but because architecture usually lives in documents, conventions, and tribal knowledge.
 
-In real-world .NET projects, especially in enterprise environments, architecture is not a suggestion. Layer boundaries matter. Dependency direction matters. Naming conventions matter. A CommandHandler is not just a class � it belongs in a specific layer, in a specific project, with a specific name and type. When those rules are applied inconsistently, the solution slowly drifts.
+In real-world .NET projects, especially in enterprise environments, architecture is not a suggestion. Layer boundaries matter. Dependency direction matters. Naming conventions matter. A CommandHandler is not just a class - it belongs in a specific layer, in a specific project, with a specific name and type. When those rules are applied inconsistently, the solution slowly drifts.
 
-This project started as an experiment: what if the AI didn�t have to remember or invent any of that?
+This project started as an experiment: what if the AI didn't have to remember or invent any of that?
 
 Instead of asking the AI to decide where something should live or how it should be named, the AI simply declares intent:
 - I need a CommandHandler.
@@ -44,7 +44,7 @@ It is an investigation into architectural governance for AI-driven development.
 
 ## Installation
 
-This project is a runnable ASP.NET Core application, not a NuGet package.
+This project is a runnable ASP.NET Core application.
 
 ### Prerequisites
 
