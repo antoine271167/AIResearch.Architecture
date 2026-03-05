@@ -4,16 +4,16 @@ A REST API that generates and validates C# .NET solution scaffolds conforming to
 
 ## Why This Project Exists
 
-AI coding agents are incredibly capable. They can generate features, refactor code, and scaffold entire solutions in seconds. But when it comes to architecture, they still tend to guess. They invent folder structures. They improvise namespaces. They quietly bend dependency rules. Not because they are careless � but because architecture usually lives in documents, conventions, and tribal knowledge.
+AI coding agents are incredibly capable. They can generate features, refactor code, and scaffold entire solutions in seconds. But when it comes to architecture, they still tend to guess. They invent folder structures. They improvise namespaces. They quietly bend dependency rules. Not because they are careless - but because architecture usually lives in documents, conventions, and tribal knowledge.
 
 In real-world .NET projects, especially in enterprise environments, architecture is not a suggestion. Layer boundaries matter. Dependency direction matters. Naming conventions matter. A CommandHandler is not just a class � it belongs in a specific layer, in a specific project, with a specific name and type. When those rules are applied inconsistently, the solution slowly drifts.
 
 This project started as an experiment: what if the AI didn�t have to remember or invent any of that?
 
 Instead of asking the AI to decide where something should live or how it should be named, the AI simply declares intent:
-�I need a CommandHandler.�
-�I need a Repository.�
-�I need an Interface.�
+- I need a CommandHandler.
+- I need a Repository.
+- I need an Interface.
 
 The MCP service then determines the rest. It decides the correct layer, project, namespace, file location, and type kind. Architecture becomes executable policy instead of polite documentation.
 
@@ -21,7 +21,7 @@ The core idea is simple but powerful:
 The AI generates behavior.
 The MCP governs structure.
 
-By moving architectural decisions into a machine-readable, enforceable system, we reduce drift, eliminate guesswork, and make AI far more valuable in structured environments. This project explores what happens when architecture is no longer something the AI must infer � but something it must consult.
+By moving architectural decisions into a machine-readable, enforceable system, we reduce drift, eliminate guesswork, and make AI far more valuable in structured environments. This project explores what happens when architecture is no longer something the AI must infer - but something it must consult.
 
 It is an investigation into architectural governance for AI-driven development.
 
@@ -33,14 +33,14 @@ It is an investigation into architectural governance for AI-driven development.
 
 ## Features
 
-- **Get architecture descriptor** � returns the layer definitions (Domain, Application, Infrastructure, WebApi) and their allowed dependency directions
-- **Get architecture rules** � returns all coded rules with descriptions (dependency constraints, interface requirements, accessibility requirements)
-- **Get component roles** � returns the complete catalogue of valid roles (`Entity`, `CommandHandler`, `Repository`, `DomainService`, `Controller`, etc.) with their target layer and C# type kind
-- **Generate C# components** � scaffolds files (class, record, interface, struct) for the given component roles, with correct namespace, `using` statements, constructor injection stubs, and interface implementations; layer is inferred from the role when not specified, see also: [Generate-Flow_Architecture.md](https://github.com/antoine271167/AIResearch.Architecture/blob/main/docs/Generate-Flow_Architecture.md)
-- **Generate workspace** � scaffolds a full `.sln` and `.csproj` project tree for one or more features across all architecture layers
-- **Validate architecture** � accepts a dictionary of file paths ? source content and reports layer dependency violations
-- **MCP manifest** � exposes a machine-readable manifest (`/v1.0/Mcp/manifest`) that AI clients use to discover all available actions, see also: [MCP-Manifest-Flow_Architecture.md](https://github.com/antoine271167/AIResearch.Architecture/blob/main/docs/MCP-Manifest-Flow_Architecture.md)
-- **PowerShell helpers** � exposes ready-to-use PowerShell functions (`/v1.0/PowerShell/helpers`) that AI agents load before calling the API, see also: [PowerShell-Helpers-Flow_Architecture.md](https://github.com/antoine271167/AIResearch.Architecture/blob/main/docs/PowerShell-Helpers-Flow_Architecture.md)
+- **Get architecture descriptor** - returns the layer definitions (Domain, Application, Infrastructure, WebApi) and their allowed dependency directions
+- **Get architecture rules** - returns all coded rules with descriptions (dependency constraints, interface requirements, accessibility requirements)
+- **Get component roles** - returns the complete catalogue of valid roles (`Entity`, `CommandHandler`, `Repository`, `DomainService`, `Controller`, etc.) with their target layer and C# type kind
+- **Generate C# components** - scaffolds files (class, record, interface, struct) for the given component roles, with correct namespace, `using` statements, constructor injection stubs, and interface implementations; layer is inferred from the role when not specified, see also: [Generate-Flow_Architecture.md](https://github.com/antoine271167/AIResearch.Architecture/blob/main/docs/Generate-Flow_Architecture.md)
+- **Generate workspace** - scaffolds a full `.sln` and `.csproj` project tree for one or more features across all architecture layers
+- **Validate architecture** - accepts a dictionary of file paths ? source content and reports layer dependency violations
+- **MCP manifest** - exposes a machine-readable manifest (`/v1.0/Mcp/manifest`) that AI clients use to discover all available actions, see also: [MCP-Manifest-Flow_Architecture.md](https://github.com/antoine271167/AIResearch.Architecture/blob/main/docs/MCP-Manifest-Flow_Architecture.md)
+- **PowerShell helpers** - exposes ready-to-use PowerShell functions (`/v1.0/PowerShell/helpers`) that AI agents load before calling the API, see also: [PowerShell-Helpers-Flow_Architecture.md](https://github.com/antoine271167/AIResearch.Architecture/blob/main/docs/PowerShell-Helpers-Flow_Architecture.md)
 
 ## Installation
 
@@ -69,7 +69,7 @@ http://localhost:5000/swagger
 
 ## Quick Start
 
-The Quick Start below walks through the minimal sequence required to generate and validate a Clean Architecture solution using the MCP API. It demonstrates the correct call order, required parameters, and expected responses. Follow the steps exactly as shown � architectural structure is inferred and enforced by the MCP tool, not manually defined.
+The Quick Start below walks through the minimal sequence required to generate and validate a Clean Architecture solution using the MCP API. It demonstrates the correct call order, required parameters, and expected responses. Follow the steps exactly as shown - architectural structure is inferred and enforced by the MCP tool, not manually defined.
 
 ### 1. Load PowerShell helpers (for AI agents)
 
@@ -227,7 +227,7 @@ With requirements:
 - No inferred paths
 - Strict parameter consistency
 
-Describe what should exist (or instruct the AI to figure out what should exist) � not where it belongs. The MCP tool determines placement.
+Describe what should exist (or instruct the AI to figure out what should exist) - not where it belongs. The MCP tool determines placement.
 
 You can find an example [example.prompt.md](https://github.com/antoine271167/AIResearch.Architecture/blob/main/tool/example.prompt.md) in the Tool folder.
 
@@ -310,30 +310,30 @@ AIResearch.Architecture.Contracts
   - DTOs, request/response records, IMediator / IRequest / IRequestHandler interfaces
 
 AIResearch.Architecture.Domain
-  - IArchitectureLayersProvider    � layer definitions and dependency graph
-  - IComponentRoleProvider         � catalogue of component roles and their metadata
-  - IArchitectureRule (and impls)  � individual rules (dependency, type-kind, interface requirement, accessibility)
+  - IArchitectureLayersProvider    - layer definitions and dependency graph
+  - IComponentRoleProvider         - catalogue of component roles and their metadata
+  - IArchitectureRule (and impls)  - individual rules (dependency, type-kind, interface requirement, accessibility)
 
 AIResearch.Architecture.Application
   - Commands
-        GenerateComponentsCommand  � resolves layer, validates dependencies, generates code
-        GenerateWorkspaceCommand   � scaffolds .sln and .csproj files
+        GenerateComponentsCommand  - resolves layer, validates dependencies, generates code
+        GenerateWorkspaceCommand   - scaffolds .sln and .csproj files
   - Queries
-        GetArchitectureQuery       � returns the architecture descriptor
-        GetRulesQuery              � returns all architecture rules
-        GetComponentRolesQuery     � returns component role catalogue
-        ValidateArchitectureQuery  � analyses source files and reports violations
+        GetArchitectureQuery       - returns the architecture descriptor
+        GetRulesQuery              - returns all architecture rules
+        GetComponentRolesQuery     - returns component role catalogue
+        ValidateArchitectureQuery  - analyses source files and reports violations
   - Services
-        CSharpCodeGeneratorService � builds C# source text via Roslyn and formats it
-        CSharpCodeAnalyzerService  � parses source files with Roslyn to extract dependencies
-        LayerInferenceService      � infers the target layer from a component role
-        WorkspaceService           � generates solution file and csproj files
+        CSharpCodeGeneratorService - builds C# source text via Roslyn and formats it
+        CSharpCodeAnalyzerService  - parses source files with Roslyn to extract dependencies
+        LayerInferenceService      - infers the target layer from a component role
+        WorkspaceService           - generates solution file and csproj files
 
 AIResearch.Architecture.Host
-  - ArchitectureController  � REST endpoints
-  - McpController           � serves the MCP manifest JSON
-  - PowerShellController    � serves PowerShell helper functions
-  - McpManifestGenerator    � reflects over controllers decorated with [McpAction] to build the manifest
+  - ArchitectureController  - REST endpoints
+  - McpController           - serves the MCP manifest JSON
+  - PowerShellController    - serves PowerShell helper functions
+  - McpManifestGenerator    - reflects over controllers decorated with [McpAction] to build the manifest
 ```
 
 All cross-layer communication flows through `IMediator`. No direct service-to-service calls cross project boundaries.
@@ -363,7 +363,7 @@ dotnet test
 
 1. Fork or clone the repository.
 2. Create a branch from `main`.
-3. Follow the existing project layering � Domain has no dependencies on Application or Infrastructure; Application depends only on Domain and Contracts.
+3. Follow the existing project layering - Domain has no dependencies on Application or Infrastructure; Application depends only on Domain and Contracts.
 4. Add or extend architecture rules in `AIResearch.Architecture.Domain/Services/Rules`.
 5. Add new component roles in `ComponentRoleProvider._allRoles`.
 6. Open a pull request targeting `main`.
