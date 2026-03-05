@@ -1,0 +1,158 @@
+/* Swagger UI Dark Mode - Detailed Styling */
+
+body { background-color: #1e1e1e !important; }
+
+.swagger-ui {
+    background-color: #1e1e1e;
+    color: #d0d0d0;
+}
+
+.swagger-ui .info .title {
+    color: #d0d0d0 !important;
+    font-size: 36px;
+}
+
+.swagger-ui .info .title small { color: #d0d0d0 !important; }
+
+.swagger-ui .info p,
+.swagger-ui .info li,
+.swagger-ui .info a { color: #d0d0d0 !important; }
+
+.swagger-ui .opblock-tag {
+    border-bottom: 1px solid #4a4a4a;
+    color: #d0d0d0 !important;
+}
+
+.swagger-ui .opblock-tag small { color: #d0d0d0 !important; }
+
+.swagger-ui .opblock {
+    background-color: #2d2d30;
+    border: 1px solid #4a4a4a;
+}
+
+.swagger-ui .opblock .opblock-summary { border-color: #4a4a4a; }
+
+.swagger-ui .opblock-section-header {
+    background-color: #1e1e1e !important;
+    border-color: #4a4a4a !important;
+}
+
+.swagger-ui .opblock-section-header h4,
+.swagger-ui .opblock-section-header label { color: #d0d0d0 !important; }
+
+.swagger-ui .opblock-summary-description,
+.swagger-ui .opblock-summary-path { color: #d0d0d0 !important; }
+
+.swagger-ui .opblock-description-wrapper p,
+.swagger-ui .opblock-external-docs-wrapper p,
+.swagger-ui .opblock-title_normal p { color: #d0d0d0 !important; }
+
+.swagger-ui .opblock.opblock-get {
+    background-color: rgba(97, 175, 254, 0.15);
+    border-color: #61affe;
+}
+
+.swagger-ui .opblock.opblock-get .opblock-summary-method { background-color: #61affe; }
+
+.swagger-ui .opblock.opblock-post {
+    background-color: rgba(73, 204, 144, 0.15);
+    border-color: #49cc90;
+}
+
+.swagger-ui .opblock.opblock-post .opblock-summary-method { background-color: #49cc90; }
+
+.swagger-ui .opblock.opblock-put {
+    background-color: rgba(252, 161, 48, 0.15);
+    border-color: #fca130;
+}
+
+.swagger-ui .opblock.opblock-put .opblock-summary-method { background-color: #fca130; }
+
+.swagger-ui .opblock.opblock-delete {
+    background-color: rgba(249, 62, 62, 0.15);
+    border-color: #f93e3e;
+}
+
+.swagger-ui .opblock.opblock-delete .opblock-summary-method { background-color: #f93e3e; }
+
+.swagger-ui .opblock.opblock-patch {
+    background-color: rgba(80, 227, 194, 0.15);
+    border-color: #50e3c2;
+}
+
+.swagger-ui .opblock.opblock-patch .opblock-summary-method { background-color: #50e3c2; }
+
+.swagger-ui .tab li {
+    background-color: #2d2d30;
+    color: #d0d0d0 !important;
+}
+
+.swagger-ui .btn {
+    background-color: #4a4a4a;
+    border-color: #5a5a5a;
+    color: #d0d0d0 !important;
+}
+
+.swagger-ui .btn:hover { background-color: #5a5a5a; }
+
+.swagger-ui input[type=text],
+.swagger-ui textarea,
+.swagger-ui select {
+    background-color: #333337;
+    border-color: #4a4a4a;
+    color: #d0d0d0 !important;
+}
+
+.swagger-ui .response-col_status { color: #d0d0d0 !important; }
+
+.swagger-ui .response-col_description { color: #d0d0d0 !important; }
+
+.swagger-ui .model-box,
+.swagger-ui .responses-inner { background-color: #2d2d30; }
+
+.swagger-ui .prop-type,
+.swagger-ui .prop-format { color: #5dd6b9 !important; }
+
+.swagger-ui .response-col_links { color: #7eb7f5 !important; }
+
+.swagger-ui table thead tr th,
+.swagger-ui table thead tr td {
+    border-bottom-color: #4a4a4a;
+    color: #d0d0d0 !important;
+}
+
+.swagger-ui .parameter__name,
+.swagger-ui .parameter__type { color: #d0d0d0 !important; }
+
+.swagger-ui .parameter__name.required span { color: #f93e3e !important; }
+
+.swagger-ui .topbar {
+    background-color: #2d2d30;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.swagger-ui .scheme-container {
+    background-color: #333337;
+    border: 1px solid #4a4a4a;
+}
+
+.swagger-ui .model-title,
+.swagger-ui .model { color: #d0d0d0 !important; }
+
+.swagger-ui .model-toggle { color: #d0d0d0 !important; }
+
+.swagger-ui .prop-name { color: #d0d0d0 !important; }
+
+.swagger-ui section.models { border: 1px solid #4a4a4a; }
+
+.swagger-ui section.models h4 { color: #d0d0d0 !important; }
+
+.swagger-ui section.models .model-container { background-color: #2d2d30; }
+
+.swagger-ui .renderedMarkdown p,
+.swagger-ui .renderedMarkdown code { color: #d0d0d0 !important; }
+
+.swagger-ui code {
+    background-color: #3c3c3c !important;
+    color: #d0d0d0 !important;
+}

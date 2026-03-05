@@ -1,0 +1,11 @@
+# Ignore local appsettings
+appsettings.Development.json
+
+# Visual Studio / build folders
+.vs/
+bin/
+obj/
+
+# User-specific files
+*.user
+

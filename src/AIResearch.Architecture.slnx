@@ -1,0 +1,16 @@
+<Solution>
+	<Folder Name="/Solution Items/">
+		<File Path="../LICENSE" />
+		<File Path="../Medium Article.md" />
+		<File Path="../README.md" />
+		<File Path="../docs/Generate-Flow_Architecture.md" />
+		<File Path="../docs/MCP-Manifest-Flow_Architecture.md" />
+		<File Path="../docs/PowerShell-Helpers-Flow_Architecture.md" />
+		<File Path="../tool/architecture-mcp.prompt.md" />
+		<File Path="../tool/example.prompt.md" />
+	</Folder>
+	<Project Path="AIResearch.Architecture.Application/AIResearch.Architecture.Application.csproj" />
+	<Project Path="AIResearch.Architecture.Contracts/AIResearch.Architecture.Contracts.csproj" />
+	<Project Path="AIResearch.Architecture.Domain/AIResearch.Architecture.Domain.csproj" />
+	<Project Path="AIResearch.Architecture.Host/AIResearch.Architecture.Host.csproj" />
+</Solution>
